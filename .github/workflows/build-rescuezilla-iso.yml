@@ -1,6 +1,6 @@
 # On push [1]
 # [1] https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
-on: [push]
+on: [push,workflow_dispatch]
 jobs:
   rescuezilla-iso-build:
     # The build bot OS environment does not really matter, as the docker image
