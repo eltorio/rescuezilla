@@ -43,33 +43,33 @@ jobs:
         run: make docker-noble
       - run: sudo mv build/rescuezilla.amd64.noble.iso build/rescuezilla-${{github.ref_name}}-64bit.noble-unreleased.iso
 
-      - run: make docker-status
-      - name: Make Ubuntu 23.10 (Mantic) ISO
-        run: make docker-mantic
-      - run: sudo mv build/rescuezilla.amd64.mantic.iso build/rescuezilla-${{github.ref_name}}-64bit.mantic.iso
+      # - run: make docker-status
+      # - name: Make Ubuntu 23.10 (Mantic) ISO
+      #   run: make docker-mantic
+      # - run: sudo mv build/rescuezilla.amd64.mantic.iso build/rescuezilla-${{github.ref_name}}-64bit.mantic.iso
 
-      - run: make docker-status
-      - name: Make Ubuntu 23.04 LTS (Lunar) ISO
-        run: make docker-lunar
-      - run: sudo mv build/rescuezilla.amd64.lunar.iso build/rescuezilla-${{github.ref_name}}-64bit.lunar.iso
+      # - run: make docker-status
+      # - name: Make Ubuntu 23.04 LTS (Lunar) ISO
+      #   run: make docker-lunar
+      # - run: sudo mv build/rescuezilla.amd64.lunar.iso build/rescuezilla-${{github.ref_name}}-64bit.lunar.iso
 
       - run: make docker-status
       - name: Make Ubuntu 22.04 LTS (Jammy) ISO [LTS  = Long Term Support]
         run: make docker-jammy
       - run: sudo mv build/rescuezilla.amd64.jammy.iso build/rescuezilla-${{github.ref_name}}-64bit.jammy.iso
 
-      - run: make docker-status
-      - name: Make Ubuntu 20.04 LTS (Focal) ISO [LTS  = Long Term Support]
-        run: make docker-focal
-      - run: sudo mv build/rescuezilla.amd64.focal.iso build/rescuezilla-${{github.ref_name}}-64bit.focal.iso
+      # - run: make docker-status
+      # - name: Make Ubuntu 20.04 LTS (Focal) ISO [LTS  = Long Term Support]
+      #   run: make docker-focal
+      # - run: sudo mv build/rescuezilla.amd64.focal.iso build/rescuezilla-${{github.ref_name}}-64bit.focal.iso
 
-      - run: make docker-status
-      - name: Make Ubuntu 18.04 LTS (Bionic) ISO (i386)
-        run: make docker-bionic-i386
-      - run: sudo mv build/rescuezilla.i386.bionic.iso build/rescuezilla-${{github.ref_name}}-32bit.bionic.iso
+      # - run: make docker-status
+      # - name: Make Ubuntu 18.04 LTS (Bionic) ISO (i386)
+      #   run: make docker-bionic-i386
+      # - run: sudo mv build/rescuezilla.i386.bionic.iso build/rescuezilla-${{github.ref_name}}-32bit.bionic.iso
 
-      - name: Create checksums for ISO images
-        run: cd build && sudo ../src/scripts/create-iso-checksums.sh rescuezilla_${{env.DEB_VERSION}}-1_all.deb  rescuezilla-${{github.ref_name}}-*.iso
+      # - name: Create checksums for ISO images
+      #   run: cd build && sudo ../src/scripts/create-iso-checksums.sh rescuezilla_${{env.DEB_VERSION}}-1_all.deb  rescuezilla-${{github.ref_name}}-*.iso
 
       - name: Upload release assets (on tag push)
         uses: softprops/action-gh-release@v1
@@ -98,33 +98,38 @@ jobs:
           name: SHA1SUM
           path: build/SHA1SUM
 
+      # - uses: actions/upload-artifact@v3
+      #   with:
+      #     name: rescuezilla_${{env.DEB_VERSION}}-1_all.deb
+      #     path: build/rescuezilla_${{env.DEB_VERSION}}-1_all.deb
+
       - uses: actions/upload-artifact@v3
         with:
-          name: rescuezilla_${{env.DEB_VERSION}}-1_all.deb
-          path: build/rescuezilla_${{env.DEB_VERSION}}-1_all.deb
+          name: rescuezilla-${{github.ref_name}}-64bit.noble.iso
+          path: build/rescuezilla-${{github.ref_name}}-64bit.noble.iso
 
       - uses: actions/upload-artifact@v3
         with:
           name: rescuezilla-${{github.ref_name}}-64bit.mantic.iso
           path: build/rescuezilla-${{github.ref_name}}-64bit.mantic.iso
 
-      - uses: actions/upload-artifact@v3
-        with:
-          name: rescuezilla-${{github.ref_name}}-64bit.noble.unreleased.iso
-          path: build/rescuezilla-${{github.ref_name}}-64bit.noble.unreleased.iso
+      # - uses: actions/upload-artifact@v3
+      #   with:
+      #     name: rescuezilla-${{github.ref_name}}-64bit.noble.unreleased.iso
+      #     path: build/rescuezilla-${{github.ref_name}}-64bit.noble.unreleased.iso
 
       - uses: actions/upload-artifact@v3
         with:
           name: rescuezilla-${{github.ref_name}}-64bit.jammy.iso
           path: build/rescuezilla-${{github.ref_name}}-64bit.jammy.iso
 
-      - uses: actions/upload-artifact@v3
-        with:
-          name: rescuezilla-${{github.ref_name}}-64bit.focal.iso
-          path: build/rescuezilla-${{github.ref_name}}-64bit.focal.iso
+      # - uses: actions/upload-artifact@v3
+      #   with:
+      #     name: rescuezilla-${{github.ref_name}}-64bit.focal.iso
+      #     path: build/rescuezilla-${{github.ref_name}}-64bit.focal.iso
 
-      - uses: actions/upload-artifact@v3
-        with:
-          name: rescuezilla-${{github.ref_name}}-32bit.bionic.iso
-          path: build/rescuezilla-${{github.ref_name}}-32bit.bionic.iso
+      # - uses: actions/upload-artifact@v3
+      #   with:
+      #     name: rescuezilla-${{github.ref_name}}-32bit.bionic.iso
+      #     path: build/rescuezilla-${{github.ref_name}}-32bit.bionic.iso
 

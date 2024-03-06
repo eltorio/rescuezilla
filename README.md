@@ -1,6 +1,6 @@
 [![Rescuezilla banner](docs/images/banner.big.png)](https://rescuezilla.com) 
 
-# Rescuezilla [![Build Status](https://github.com/rescuezilla/rescuezilla/actions/workflows/build-rescuezilla-iso.yml/badge.svg?event=push&branch=master)](https://github.com/rescuezilla/rescuezilla/actions) [![Translation status](https://hosted.weblate.org/widgets/rescuezilla/-/svg-badge.svg)](https://hosted.weblate.org/engage/rescuezilla/)
+# Rescuezilla [![Build Status](https://github.com/eltorio/rescuezilla/actions/workflows/build-rescuezilla-iso.yml/badge.svg?event=push&branch=master)](https://github.com/eltorio/rescuezilla/actions) [![Translation status](https://hosted.weblate.org/widgets/rescuezilla/-/svg-badge.svg)](https://hosted.weblate.org/engage/rescuezilla/)
 
 Rescuezilla is an easy-to-use disk cloning and imaging application that's fully compatible with Clonezilla — the industry-standard trusted by tens of millions.
 
@@ -69,7 +69,7 @@ Rescuezilla has been translated into the following languages:
 * 中文(简体) (zh-CN)
 * 中文(繁體) (zh-Hant)
 
-Rescuezilla uses Weblate for translation. **Please see [Translations HOWTO](https://github.com/rescuezilla/rescuezilla/wiki/Translations-HOWTO) to submit or update a translation.**
+Rescuezilla uses Weblate for translation. **Please see [Translations HOWTO](https://github.com/eltorio/rescuezilla/wiki/Translations-HOWTO) to submit or update a translation.**
 
 ## Screenshots
 
@@ -90,7 +90,7 @@ Below table shows an abridged history of Rescuezilla. For more information, see 
 
 | Release             | Release Date | Operating System | Notes |
 | ------------------- | ---------- | ---------------- | ---------------------------------- |
-| Rescuezilla Rolling | 2023-XX-XX | Ubuntu 23.10     | Weekly [rolling release](https://github.com/rescuezilla/rescuezilla/releases) with bleeding-edge features and translations
+| Rescuezilla Rolling | 2023-XX-XX | Ubuntu 23.10     | Weekly [rolling release](https://github.com/eltorio/rescuezilla/releases) with bleeding-edge features and translations
 | Rescuezilla 2.4.2   | 2023-03-05 | Ubuntu 22.04     | Began compiling latest partclone
 | Rescuezilla 2.3.1   | 2022-01-02 | Ubuntu 21.10     | Added 'Verify Image'
 | Rescuezilla 2.2     | 2021-06-04 | Ubuntu 21.04     | Added 'Clone', VM image support.
@@ -100,7 +100,7 @@ Below table shows an abridged history of Rescuezilla. For more information, see 
 | Redo Rescue 2.0.0   | 2020-06-12 | Debian 9 Stretch | Redo author [resurfaces](https://sourceforge.net/p/redobackup/discussion/general/thread/d0e37c4750/) after 7.5 year absence
 | Rescuezilla 1.0.5.1 | 2020-03-24 | Ubuntu 18.04.4   |
 | Rescuezilla 1.0.5   | 2019-11-08 | Ubuntu 18.04.3   | Rescuezilla [fork](https://sourceforge.net/p/redobackup/discussion/general/thread/116063b485/?limit=25#610c) revives project
-| Community updates   | Various    | Various          | Sporadic community [updates](https://github.com/rescuezilla/rescuezilla/wiki/Bugs-in-unofficial-Redo-Backup-updates#identifying-redo-backup-versions) for Redo
+| Community updates   | Various    | Various          | Sporadic community [updates](https://github.com/eltorio/rescuezilla/wiki/Bugs-in-unofficial-Redo-Backup-updates#identifying-redo-backup-versions) for Redo
 | Redo Backup 1.0.4   | 2012-11-20 | Ubuntu 12.04.1   | Last release by Redo author for 7.5 years
 | Redo Backup 0.9.8   | 2011-03-10 | Ubuntu 10.10     | Redo author [deleted](https://sourceforge.net/p/redobackup/discussion/help/thread/4ea6ca31/) v0.9.2-v0.9.7
 | Redo Backup 0.9.2   | 2010-06-24 | xPUD             |
@@ -115,7 +115,7 @@ See [Building ISO image](docs/build_instructions/BUILD.ISO.IMAGE.md)
 
 ## Future development
 
-Rescuezilla features are prioritized according to the [roadmap](https://github.com/rescuezilla/rescuezilla/wiki/Rescuezilla-Project-Roadmap). Please consider becoming a [Patreon to help fund Rescuezilla's continued development](https://www.patreon.com/join/rescuezilla)!
+Rescuezilla features are prioritized according to the [roadmap](https://github.com/eltorio/rescuezilla/wiki/Rescuezilla-Project-Roadmap). Please consider becoming a [Patreon to help fund Rescuezilla's continued development](https://www.patreon.com/join/rescuezilla)!
 
 ## Support
 
@@ -123,4 +123,4 @@ If you need help, start by checking the [frequently asked questions](https://res
 
 ## Downloads
 
-[Download the latest Rescuezilla ISO image on the GitHub Release page](https://github.com/rescuezilla/rescuezilla/releases/latest)
+[Download the latest Rescuezilla ISO image on the GitHub Release page](https://github.com/eltorio/rescuezilla/releases/latest)
