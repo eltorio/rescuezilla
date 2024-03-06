@@ -38,10 +38,10 @@ jobs:
       - name: Run unit tests within the Docker container
         run: make docker-test
 
-      - run: make docker-status
-      - name: Make Ubuntu 24.04 LTS (Noble) ISO
-        run: make docker-noble
-      - run: sudo mv build/rescuezilla.amd64.noble.iso build/rescuezilla-${{github.ref_name}}-64bit.noble-unreleased.iso
+      #- run: make docker-status
+      #- name: Make Ubuntu 24.04 LTS (Noble) ISO
+      #  run: make docker-noble
+      #- run: sudo mv build/rescuezilla.amd64.noble.iso build/rescuezilla-${{github.ref_name}}-64bit.noble-unreleased.iso
 
       # - run: make docker-status
       # - name: Make Ubuntu 23.10 (Mantic) ISO
